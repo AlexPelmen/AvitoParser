@@ -4,6 +4,7 @@
      */
 
      require_once __DIR__ . "/constants.php";
+     require_once __DIR__ . "/AviAdsCollection.php";
 
      class AviParser {
          public
@@ -15,10 +16,32 @@
             $this->dom = new PHPHtmlParser\Dom;
         }
 
+
+        /**
+         * Формирование коллекции модлей объявлений
+         * @param $htmlStream поток guzzle после запроса к авито
+         * @return AviAdsCollection
+         */
         public function parse($htmlStream) {
             $this->dom->loadStr($htmlStream);
             $items = $this->getItems();
+            $collection = new AviAdsCollection();
+            foreach($items as $item) {
+                $collection->add(
+                        new AviAdsModel([
+                            "id" => $this->getItemId($item),
+                            "title" => $this->getItemTitle($item),
+                            "link" => $this->getItemLink($item),
+                            "price" => $this->getItemPrice($item),
+                            "date" => $this->getItemDate($item),
+                        ],
+                        $this->logger
+                    )
+                );
+            }
+            return $collection;            
         }
+
 
         private function getPrimaryProp($obj, $prop) {
             try{
@@ -80,6 +103,14 @@
         public function getItemDate($item) {
             return $this->getOptionalProp(
                 $item->find(AVITO_SELECTOR_ITEM_DATE),
+                "text"
+            );
+        }
+
+
+        public function getAdsNumber() {
+            return $this->getPrimaryProp(
+                $this->dom->find(AVITO_SELECTIOR_ADS_NUMBER),
                 "text"
             );
         }

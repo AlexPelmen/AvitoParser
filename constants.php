@@ -28,4 +28,5 @@
     const AVITO_SELECTOR_ITEM_PRICE = ".price-text";
     const AVITO_SELECTOR_ITEM_ADRESS  = ".geo-address span";
     const AVITO_SELECTOR_ITEM_DATE = "[data-marker=item-date]";
+    const AVITO_SELECTIOR_ADS_NUMBER = ".page-title-count";
 
