@@ -17,4 +17,12 @@
         public function clear() {
             $this->models = [];
         }
+
+        public function getById($id) {
+            foreach($this->model as $model) {
+                if($model->id == $id) {
+                    return $model;
+                }
+            }
+        }
     }

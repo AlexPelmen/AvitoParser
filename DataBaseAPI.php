@@ -34,7 +34,7 @@
          * Запрос на добавление инфы об одном объявлении
          * 
          */
-        public function insertAdsInfo($adsModel) {
+        public function insert($model) {
             try{
                 $res = $this->db->query("INSERT INTO ads_data(
                     id, 
@@ -45,13 +45,13 @@
                     time,
                     dislike 
                 ) VALUES (
-                    $adsModel->id, 
-                    '$adsModel->title',
-                    '$adsModel->link',
-                    $adsModel->price,
-                    '$adsModel->city',
-                    $adsModel->time,
-                    ".($adsModel->dislike ? "TRUE" : "FALSE")."
+                    $model->id, 
+                    '$model->title',
+                    '$model->link',
+                    $model->price,
+                    '$model->city',
+                    $model->time,
+                    ".($model->dislike ? "TRUE" : "FALSE")."
                 );");
             }
             catch(Exception $e) {
@@ -68,6 +68,24 @@
                 foreach($adsCollection->models as $model) {
                     $this->insertAdsInfo($model);
                 }
+            }
+            catch(Exception $e) {
+                $this->logger->error($e);
+            }
+        }
+
+
+        /**
+         * Возвращает только id тех объявлений, которых еще нет в бд
+         */
+        public function filterNewIds($ids) {
+            dump($ids);
+            exit();
+            try{
+                $query = "SELECT `id` FROM ads_data WHERE `id` NOT LIKE (".implode(',',$ids).")";
+                $this->logger->log("Выполняем sql запрос\nДлина ".strlen($query)."\n$query");
+                $res = $this->db->query($query);
+                return mysqli_fetch_array($res);
             }
             catch(Exception $e) {
                 $this->logger->error($e);

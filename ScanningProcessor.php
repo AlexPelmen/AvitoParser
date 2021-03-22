@@ -12,7 +12,9 @@
     require_once __DIR__ . "/DataBaseAPI.php";
     require_once __DIR__ . "/AviAdsCollection.php";
     require_once __DIR__ . "/AviAdsModel.php";
-    require_once __DIR__ . "/AviAdsRequest.php";
+    require_once __DIR__ . "/AviRequestAttributes.php";
+    require_once __DIR__ . "/AviRequest.php";
+    require_once __DIR__ . "/AviHtmlParser.php";
 
 
     class ScanningProcessor {
@@ -20,6 +22,7 @@
         public
             $database,
             $logger,
+            $parser,
             $adsCollection,
             $requests;
 
@@ -29,17 +32,29 @@
          */
         public function __construct() {
             $this->logger = new Logger();
-            $this->database = new DataBaseAPI($logger);
-            $this->adsCollection = new AdsCollection();
+            $this->database = new DataBaseAPI($this->logger);
+            $this->adsCollection = new AviAdsCollection();
             $this->requests = [];
+            $this->parser = new AviHtmlParser($this->logger);
+        }
 
+        public function scan() {
+            $this->logger->log("Started");
             $requestData = $this->getRequestSettingsFromConfig();
             foreach($requestData as $rData){
                 $attrs = new AviRequestAttributes($rData->city, $rData->category, $rData->query);
-                $this->requests []= new AviRequest($attrs, $this->logger);
+                $this->requests []= new AviRequest($attrs, $this->parser, $this->adsCollection, $this->logger);
             };
 
-            $this->executeRequests();
+            $ids = $this->executeRequests();
+            if($ids) {
+                $newIds = $this->database->filterNewIds($ids);  // получаем новые id для того, чтобы снизить количество INSERT запросов к бд
+                foreach($newIds as $id) {
+                    $model = $this->adsCollection->getById($id);
+                    $this->database->insert($model);
+                }
+            }
+            $this->logger->log("Finished");
         }
 
         
@@ -54,23 +69,15 @@
 
 
         public function executeRequests() {
+            $ids = [];
             foreach($this->requests as $request) {
-                $data = $this->executeOneRequest($request);
-
-                 /* Туду посылаем данные в обработку */
-
+                $ids = array_merge($ids, $this->executeOneRequest($request));
             }
+            return $ids;
         }
 
-
+        
         public function executeOneRequest($request) {
-            
-        }
-
-
-
-
-
-        
-        
+            return $request->getAllPagesData();            
+        }        
     }

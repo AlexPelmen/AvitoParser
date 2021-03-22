@@ -15,7 +15,7 @@
             $out .= $e;
             $out .= "\n";
             
-            file_put_contents(BASE_LOG_ERROR_PATH, $out);
+            file_put_contents(BASE_LOG_ERROR_PATH, $out, FILE_APPEND);
         }
 
         public function log($text) {
@@ -23,6 +23,6 @@
             $out .= $text;
             $out .= "\n";
 
-            file_put_contents(BASE_LOG_PATH, $out);
+            file_put_contents(BASE_LOG_PATH, $out, FILE_APPEND);
         }
     }
