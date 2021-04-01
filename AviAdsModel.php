@@ -6,26 +6,30 @@
             $logger,
             $attributes;
         
-        public function __construct($params, $logger) {  
+        public function __construct($params, $logger) { 
             $this->attributes = new AviAdsAttributes();          
             $this->logger = $logger;
             try{
                 // обязательные параметры
                 if(!isset($params['id']))
-                    throw "Need `id` param for creating AdsModel";
+                    throw new ErrorException("Need `id` param for creating AdsModel");
                 if(!isset($params['title']))
-                    throw "Need `title` param for creating AdsModel";
+                    throw new ErrorException("Need `title` param for creating AdsModel");
                 if(!isset($params['link']))
-                    throw "Need `link` param for creating AdsModel";
+                    throw new ErrorException("Need `link` param for creating AdsModel");
 
+                $this->attributes->id = $params['id'];
+                $this->attributes->title = $params['title'];
+                $this->attributes->link = $params['link'];    
                 //необязательные - просто копируем из атрибутов
-                $this->attributes->title = $params['price'] ?? null;
+                
+                $this->attributes->price = $params['price'] ?? null;
                 $this->attributes->city = $params['city'] ?? null;
-                $this->attributes->time = $params['time'] ?? null;
-                $this->attributes->dislike = $params['dislike'] ?? null;                
+                $this->attributes->date = $params['date'] ?? null;
+                $this->attributes->dislike = $params['dislike'] ?? 0;                
             }
             catch(Exception $e) {
-                $this->logger->error($e);
+                $this->logger->error("Ошибка при создании модели объявления", $e);
             }
         }
 

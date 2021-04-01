@@ -25,4 +25,8 @@
                 }
             }
         }
+
+        public function getCount() {
+            return count($this->models);
+        }
     }

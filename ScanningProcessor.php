@@ -39,7 +39,7 @@
         }
 
         public function scan() {
-            $this->logger->log("Started");
+            $this->logger->log("Начало сканирования");
             $requestData = $this->getRequestSettingsFromConfig();
             foreach($requestData as $rData){
                 $attrs = new AviRequestAttributes($rData->city, $rData->category, $rData->query);
@@ -54,7 +54,9 @@
                     $this->database->insert($model);
                 }
             }
-            $this->logger->log("Finished");
+
+            $count = $this->adsCollection->getCount();
+            $this->logger->log("Сканирование завершено. Просканировано $count объявлений");
         }
 
         
@@ -63,7 +65,7 @@
                 return json_decode(file_get_contents(BASE_CONFIG_PATH));
             }
             catch(Exception $e) {
-                $this->logger->error($e);
+                $this->logger->error("Ошибка при чтении настроек config файла", $e);
             }            
         }
 

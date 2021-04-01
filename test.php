@@ -3,6 +3,8 @@
     /**
      *  Пробуем  выполнить запросы к авито и спарсить объявления
      * 
+     * gitary_i_strunnye-ASgBAgICAUTEAsYK
+     * 
      */
 
     require __DIR__ . "/vendor/autoload.php";

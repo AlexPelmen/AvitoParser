@@ -54,11 +54,14 @@
                 $res= $this->client->request('GET', "/$city/$category", [
                     'query' => "q=$query&p=$page"
                 ]); 
-                $htmlStream = $res->getBody();     
+
+                dump($res);
+                exit();
+                $htmlStream = $res->getBody(); 
                 return $htmlStream->read($htmlStream->getSize());
             }
             catch(Exception $e) {
-                $this->logger->error($e);
+                $this->logger->error("Ошибка при выполнении запроса", $e);
                 return null;
             }
         }
@@ -67,8 +70,8 @@
          * Получаем объявления и парсим их
          */
         public function get() {
-            $htmlStream = $this->getHtml();
-            return $this->parser->parse($htmlStream, $this->collection);   // Тут заполняется коллекция
+            $html = $this->getHtml();
+            return $this->parser->parse($html, $this->collection);  // Тут заполняется коллекция
         }
 
         
@@ -81,8 +84,8 @@
 
         public function getAllPagesData() {
             $this->page = 1;
-            $ids = [];
-            while($newIds = $this->get()) {
+            $ids = $this->get();
+            while($newIds = $this->getNextPage()) {
                 $ids = array_merge($ids, $newIds);
                 sleep(BASE_SLEEP_TIME);
             };

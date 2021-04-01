@@ -23,7 +23,6 @@
 
     //Парсинг
     const AVITO_SELECTOR_ITEM = '.iva-item-root.photo-slider-slider.iva-item-list';
-    const AVITO_SELECTOR_ITEM_ID = 'data-item-id';
     const AVITO_SELECTOR_ITEM_TITLE = "h3.title-root.iva-item-title";
     const AVITO_SELECTOR_ITEM_LINK = ".iva-item-sliderLink";
     const AVITO_SELECTOR_ITEM_PRICE = ".price-text";

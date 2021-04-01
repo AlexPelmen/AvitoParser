@@ -1,0 +1,1050 @@
+
+[22.03.2021 11:11:00]Не удалось получить необязательное свойство `text` объявления `2050221983`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(84): AviRequest->get()
+#5 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#6 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#7 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#8 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#9 {main}
+[22.03.2021 11:11:03]Не удалось получить необязательное свойство `text` объявления `2085696010`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:08]Не удалось получить необязательное свойство `text` объявления `2050728501`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:08]Не удалось получить необязательное свойство `text` объявления `2050700588`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:12]Не удалось получить необязательное свойство `text` объявления `2082511616`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:12]Не удалось получить необязательное свойство `text` объявления `2085384402`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:12]Не удалось получить необязательное свойство `text` объявления `2050491857`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2049918670`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2050315388`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2050347187`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2085160440`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2082187481`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2106633141`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2091214175`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2085096714`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2082413882`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2085705966`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2091660991`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2082190457`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2085395022`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:26]Не удалось получить необязательное свойство `text` объявления `2085027542`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2082698250`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2017923872`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2020897040`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2085256939`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2020176733`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2020892225`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2109497104`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2025083506`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2045135204`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2019974834`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018554708`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2083932371`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2020665695`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2020671946`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018121677`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2085036500`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2042938239`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2085850185`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2075341271`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2017953299`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018233253`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018773032`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018550839`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2043906526`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:11:30]Не удалось получить необязательное свойство `text` объявления `2018486666`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:12:37]Не удалось получить необязательное свойство `text` объявления `2050728501`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:13:04]Не удалось получить необязательное свойство `text` объявления `2109790137`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:13:17]Не удалось получить необязательное свойство `text` объявления `2109175615`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:13:17]Не удалось получить необязательное свойство `text` объявления `2109291480`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:13:49]Не удалось получить необязательное свойство `text` объявления `2050700588`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:13:54]Не удалось получить необязательное свойство `text` объявления `2050221983`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:14:11]Не удалось получить необязательное свойство `text` объявления `2050700588`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:14:24]Не удалось получить необязательное свойство `text` объявления `2085696010`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:14:24]Не удалось получить необязательное свойство `text` объявления `2092832548`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:14:33]Не удалось получить необязательное свойство `text` объявления `2085384402`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:14:55]Не удалось получить необязательное свойство `text` объявления `2049918670`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:15:09]Не удалось получить необязательное свойство `text` объявления `2050315388`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:15:13]Не удалось получить необязательное свойство `text` объявления `2092520051`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:15:22]Не удалось получить необязательное свойство `text` объявления `2050347187`PHPHtmlParser\Exceptions\EmptyCollectionException: The collection does not contain any Nodes. in /var/www/html/avipars/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/Node/Collection.php:58
+Stack trace:
+#0 /var/www/html/avipars/AviHtmlParser.php(87): PHPHtmlParser\Dom\Node\Collection->__get()
+#1 /var/www/html/avipars/AviHtmlParser.php(132): AviHtmlParser->getOptionalProp()
+#2 /var/www/html/avipars/AviHtmlParser.php(43): AviHtmlParser->getItemDate()
+#3 /var/www/html/avipars/AviRequest.php(71): AviHtmlParser->parse()
+#4 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#5 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#6 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#7 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#8 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#9 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#10 {main}
+[22.03.2021 11:16:08]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%93%D0%B8%D1%82%D0%B0%D1%80%D0%B0&p=71` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="/eudib6qzlJrWKzB4qmJEw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(70): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}
+[22.03.2021 11:16:09]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=1` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="h9jLhAk7eXTPiKy5k4XohQ==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(70): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(84): AviRequest->get()
+#13 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#15 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[22.03.2021 11:16:09]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=2` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="qcH8bBWbjQhZyShfGB1hrw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(70): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}
+[22.03.2021 11:16:09]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%B1%D0%B0%D1%81&p=1` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="Xdp8SAqM8JhEhDwCcJ3HKw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(70): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(84): AviRequest->get()
+#13 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#15 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[22.03.2021 11:16:09]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%B1%D0%B0%D1%81&p=2` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="DfoPlA8nNVbw/0FM/97LNw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(70): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(78): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(85): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}
+[22.03.2021 11:26:57]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%93%D0%B8%D1%82%D0%B0%D1%80%D0%B0&p=1` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="sRiwtIbbftToO+/B9Vi3nw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(87): AviRequest->get()
+#13 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#15 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[22.03.2021 11:26:57]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%93%D0%B8%D1%82%D0%B0%D1%80%D0%B0&p=2` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="lB7zmPuyR+0AI4MoJnI7iQ==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(81): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(88): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}
+[22.03.2021 11:26:57]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=1` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="yjIx5Y+7SdCf3gcMSJl1uQ==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(87): AviRequest->get()
+#13 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#15 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[22.03.2021 11:26:57]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=2` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="guaNlMGzDQOsjomJ6dd9nA==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(81): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(88): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}
+[22.03.2021 11:26:58]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%B1%D0%B0%D1%81&p=1` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="VKz8V4exaZYs6v1cH+28uw==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(87): AviRequest->get()
+#13 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#15 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[22.03.2021 11:26:58]Ошибка при выполнении запросаGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=%D0%B1%D0%B0%D1%81&p=2` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="yENfac3uUABol/v5JGTk0w==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(55): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(73): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(81): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(88): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(83): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(76): ScanningProcessor->executeOneRequest()
+#16 /var/www/html/avipars/ScanningProcessor.php(49): ScanningProcessor->executeRequests()
+#17 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#18 {main}

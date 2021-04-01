@@ -55,22 +55,7 @@
                 );");
             }
             catch(Exception $e) {
-                $this->logger->error($e);
-            }
-        }
-
-        /**
-         * Несколько запросов на добавление информации об объявлениях
-         * 
-         */
-        public function insertAdsInfoArray($adsCollection) {
-            try{
-                foreach($adsCollection->models as $model) {
-                    $this->insertAdsInfo($model);
-                }
-            }
-            catch(Exception $e) {
-                $this->logger->error($e);
+                $this->logger->error("Ошибка при записи в базу данных. Запрос insert", $e);
             }
         }
 
@@ -79,8 +64,6 @@
          * Возвращает только id тех объявлений, которых еще нет в бд
          */
         public function filterNewIds($ids) {
-            dump($ids);
-            exit();
             try{
                 $query = "SELECT `id` FROM ads_data WHERE `id` NOT LIKE (".implode(',',$ids).")";
                 $this->logger->log("Выполняем sql запрос\nДлина ".strlen($query)."\n$query");
@@ -88,7 +71,7 @@
                 return mysqli_fetch_array($res);
             }
             catch(Exception $e) {
-                $this->logger->error($e);
+                $this->logger->error("Ошибка при получении списка новых идентификаторов, при запросе к бд", $e);
             }
         }
      }

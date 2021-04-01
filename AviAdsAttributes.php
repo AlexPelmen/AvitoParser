@@ -6,6 +6,6 @@
             $link,
             $price,
             $city,
-            $time,
+            $date,
             $dislike;
     }
