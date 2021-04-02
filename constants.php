@@ -7,6 +7,8 @@
     // Запросы 
     const BASE_URI = 'https://avito.ru';
     const BASE_SLEEP_TIME = 1;
+    const BASE_SLEEP_TIME_429 = 300;
+    const BASE_MAX_NUM_429 = 0;
 
     // Логирование
     const BASE_LOG_ERROR_PATH = __DIR__ . "/logs/errors.log";
@@ -29,4 +31,3 @@
     const AVITO_SELECTOR_ITEM_ADRESS  = ".geo-address span";
     const AVITO_SELECTOR_ITEM_DATE = "[data-marker=item-date]";
     const AVITO_SELECTIOR_ADS_NUMBER = ".page-title-count";
-

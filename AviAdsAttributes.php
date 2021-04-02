@@ -4,8 +4,10 @@
             $id,
             $title,
             $link,
+            $timestamp,
+            $geo,
             $price,
-            $city,
-            $date,
-            $dislike;
+            $images,
+            $locationId,
+            $dislike;            
     }

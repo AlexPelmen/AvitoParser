@@ -14,10 +14,6 @@
                 throw "AviAdsCollection must contain AviAdsModels only. Another instance given";
         }
 
-        public function clear() {
-            $this->models = [];
-        }
-
         public function getById($id) {
             foreach($this->model as $model) {
                 if($model->id == $id) {
@@ -28,5 +24,13 @@
 
         public function getCount() {
             return count($this->models);
+        }
+
+
+        public function clear() {
+            foreach($this->models as $model) {
+                unset($model);
+            }
+            $this->models = [];
         }
     }

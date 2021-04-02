@@ -24,9 +24,12 @@
                 //необязательные - просто копируем из атрибутов
                 
                 $this->attributes->price = $params['price'] ?? null;
-                $this->attributes->city = $params['city'] ?? null;
-                $this->attributes->date = $params['date'] ?? null;
-                $this->attributes->dislike = $params['dislike'] ?? 0;                
+                $this->attributes->location = $params['location'] ?? null;
+                $this->attributes->locationId = $params['locationId'] ?? null;
+                $this->attributes->geo = $params['geo'] ?? null;
+                $this->attributes->timestamp = $params['timestamp'] ?? null;
+                $this->attributes->images = $params['images'] ?? null;
+                $this->attributes->dislike = $params['dislike'] ?? 0;                    
             }
             catch(Exception $e) {
                 $this->logger->error("Ошибка при создании модели объявления", $e);

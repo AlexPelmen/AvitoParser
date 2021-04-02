@@ -51,6 +51,91 @@
 
 
         /**
+         * Новый метод парсинга инфы из верстки
+         * 
+         */
+        public function parseJSON($html, $collection) {
+
+            $this->dom->loadStr($html); 
+            $data = $this->getInitialJson();
+            $ids = [];
+            $items = $data->catalog->items;
+
+            return $this->itemsToModels($items, $collection);
+             
+        }
+
+
+        /**
+         * Преобразуем полученные от avito item-ы в модели
+         */
+        public function itemsToModels($items, $collection) {
+            $ids = [];
+            foreach($items as $item) {
+                switch($item->type) {
+                    case "banner":      // рекламные баннеры. Нафиг не надо
+                        break;
+                    case "item":
+                        try{
+                            $model = $this->createAdsModelWithObject($item);    // обычные объявления работяг
+                            if($model){
+                                $collection->add($model);
+                                $ids []= $item->id;
+                            }
+                        }
+                        catch(Exception $e) {
+                            $this->logger("Ошибка при создании модели из item.", $e);
+                        }
+                        break;
+                    case "vip":     // Проплаченные объявления, но все же релевантные
+                        $this->itemsToModels($item->items, $collection);
+                        break;
+                }
+            } 
+            return $ids;  
+        }
+
+
+        /**
+         * Достаем JSON из верски avito
+         */
+        public function getInitialJson() {
+            try{
+                $attr = $this->dom->find(".js-initial")->{"data-state"};
+                $json = html_entity_decode($attr);
+                return json_decode($json);
+            }
+            catch(Exception $e) {
+                $this->logger->error("Не удалось получить JSON при запросе", $e);
+            }
+        }
+
+
+        /**
+         * Создаем модель объявления на основе объекта из запроса
+         */
+        public function createAdsModelWithObject($obj) {
+            try{
+                return new aviAdsModel([
+                    "id" => $obj->id,
+                    "title" => $obj->title,
+                    "link" => $obj->urlPath,
+                    "timestamp" => floor($obj->sortTimeStamp / 1000) ?? null,
+                    "location" => $obj->addressDetailed->locationName ?? null,
+                    "geo" => $obj->geo->geoReferences ?? null,
+                    "images" => $obj->images ?? null,
+                    "locationId" => $obj->locationId ?? null,
+                    "price" => $obj->priceDetailed->value ?? null, 
+                ], $this->logger);
+            }
+            catch(Exception $e) {
+                $this->logger->error("Ошибка при создании модели id: ".$obj->id, $e);
+                return null;
+            }
+        }
+
+
+        /**
          * Удаляет префикс html классов
          */
         private function clearHtmlClasses($html) {
