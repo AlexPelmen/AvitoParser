@@ -25,4 +25,7 @@
         public function log($text, $e = "") {
             file_put_contents(BASE_LOG_PATH, $this->getText($text, $e), FILE_APPEND);
         }
+        public function logMessage($text) {
+            file_put_contents(BASE_LOG_PATH, $text."\n", FILE_APPEND);
+        }
     }

@@ -33,7 +33,6 @@
         public function __construct() {
             $this->logger = new Logger();
             $this->database = new DataBaseAPI($this->logger);
-            $this->adsCollection = new AviAdsCollection();
             $this->requests = [];
             $this->parser = new AviHtmlParser($this->logger);
         }
@@ -43,20 +42,11 @@
             $requestData = $this->getRequestSettingsFromConfig();
             foreach($requestData as $rData){
                 $attrs = new AviRequestAttributes($rData->city, $rData->category, $rData->query);
-                $this->requests []= new AviRequest($attrs, $this->parser, $this->adsCollection, $this->logger);
+                $this->requests []= new AviRequest($attrs, $this->parser, $this->database, $this->logger);
             };
 
-            $ids = $this->executeRequests();
-            if($ids) {
-                $newIds = $this->database->filterNewIds($ids);  // получаем новые id для того, чтобы снизить количество INSERT запросов к бд
-                foreach($newIds as $id) {
-                    $model = $this->adsCollection->getById($id);
-                    $this->database->insert($model);
-                }
-            }
-
-            $count = $this->adsCollection->getCount();
-            $this->logger->log("Сканирование завершено. Просканировано $count объявлений");
+            $count = $this->executeRequests();
+            $this->logger->log("Сканирование завершено. Просканировано $count объявлений\n\n");
         }
 
         
@@ -71,15 +61,10 @@
 
 
         public function executeRequests() {
-            $ids = [];
+            $count = 0;
             foreach($this->requests as $request) {
-                $ids = array_merge($ids, $this->executeOneRequest($request));
+                $count += $request->getAllPagesData(); 
             }
-            return $ids;
-        }
-
-        
-        public function executeOneRequest($request) {
-            return $request->getAllPagesData();            
-        }        
+            return $count;
+        }     
     }

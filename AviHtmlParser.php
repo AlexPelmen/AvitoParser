@@ -58,11 +58,39 @@
 
             $this->dom->loadStr($html); 
             $data = $this->getInitialJson();
-            $ids = [];
+            dump($data);
             $items = $data->catalog->items;
 
             return $this->itemsToModels($items, $collection);
-             
+        }
+
+
+        public function parseJSONWithMeta($html, $collection) {
+            $this->dom->loadStr($html); 
+            $data = $this->getInitialJson();
+
+            dump($data);
+            try{   
+                $items = $data->catalog->items;
+                $count = $this->itemsToModels($items, $collection);
+                $total = $data->mainCount;
+                $itemsOnPage = $data->itemsOnPage;
+                @$isAuthenticated = $data->isAuthenticated;
+                @$userId = $data->user->id;
+                $searchHash = $data->searchHash;
+
+                return [
+                    "recieved" => $count,
+                    "total" => $total,
+                    "itemsOnPage" => $itemsOnPage,
+                    "isAuthenticated" => $isAuthenticated,
+                    "userId" => $userId,
+                    "searchHash" => $searchHash,
+                ];
+            }
+            catch(Exception $e) {
+                $this->log->error("Не удалось получить одно из свойств объявления", $e);
+            }
         }
 
 
@@ -70,7 +98,7 @@
          * Преобразуем полученные от avito item-ы в модели
          */
         public function itemsToModels($items, $collection) {
-            $ids = [];
+            $count = 0;
             foreach($items as $item) {
                 switch($item->type) {
                     case "banner":      // рекламные баннеры. Нафиг не надо
@@ -80,7 +108,7 @@
                             $model = $this->createAdsModelWithObject($item);    // обычные объявления работяг
                             if($model){
                                 $collection->add($model);
-                                $ids []= $item->id;
+                                $count++;
                             }
                         }
                         catch(Exception $e) {
@@ -88,11 +116,11 @@
                         }
                         break;
                     case "vip":     // Проплаченные объявления, но все же релевантные
-                        $this->itemsToModels($item->items, $collection);
+                        $count += $this->itemsToModels($item->items, $collection);
                         break;
                 }
             } 
-            return $ids;  
+            return $count;  
         }
 
 
@@ -115,6 +143,21 @@
          * Создаем модель объявления на основе объекта из запроса
          */
         public function createAdsModelWithObject($obj) {
+            $geoParams = [];
+
+            if(isset($geo->formattedAddress)) {
+                $geoParams []= $formattedAddress;
+            } 
+            
+            if(count($obj->geo->geoReferences)) {
+                foreach($obj->geo->geoReferences as $geo) {
+                    if(isset($geo->content)){
+                        @$geoParams []= trim("$geo->content $geo->after");
+                    }                
+                }
+                $geoStr = implode(',', $geoParams);
+            }
+
             try{
                 return new aviAdsModel([
                     "id" => $obj->id,
@@ -122,7 +165,7 @@
                     "link" => $obj->urlPath,
                     "timestamp" => floor($obj->sortTimeStamp / 1000) ?? null,
                     "location" => $obj->addressDetailed->locationName ?? null,
-                    "geo" => $obj->geo->geoReferences ?? null,
+                    "geo" => $geoStr ?? null,
                     "images" => $obj->images ?? null,
                     "locationId" => $obj->locationId ?? null,
                     "price" => $obj->priceDetailed->value ?? null, 

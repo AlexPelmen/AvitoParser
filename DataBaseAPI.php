@@ -36,26 +36,43 @@
          */
         public function insert($model) {
             try{
+                $attributes = $model->attributes;
                 $res = $this->db->query("INSERT INTO ads_data(
                     id, 
                     title,
                     link,
                     price,
-                    city,
-                    time,
+                    timestamp,
+                    location,
+                    locationId,
+                    geo,
+                    images,
                     dislike 
                 ) VALUES (
-                    $model->id, 
-                    '$model->title',
-                    '$model->link',
-                    $model->price,
-                    '$model->city',
-                    $model->time,
-                    ".($model->dislike ? "TRUE" : "FALSE")."
+                    $attributes->id, 
+                    '$attributes->title',
+                    '$attributes->link',
+                    $attributes->price,
+                    $attributes->timestamp,
+                    '$attributes->location',
+                    $attributes->locationId,
+                    '$attributes->geo',
+                    '".json_encode($attributes->images)."',
+                    ".($attributes->dislike ? "TRUE" : "FALSE")."
                 );");
             }
             catch(Exception $e) {
                 $this->logger->error("Ошибка при записи в базу данных. Запрос insert", $e);
+            }
+        }
+
+
+        /**
+         * Пишем в бд модели из всей коллекции
+         */
+        public function insertCollection($collection) {
+            foreach($collection->toArray() as $model) {
+                $this->insert($model);
             }
         }
 

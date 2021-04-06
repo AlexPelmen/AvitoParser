@@ -26,6 +26,10 @@
             return count($this->models);
         }
 
+        public function toArray() {
+            return $this->models;
+        }
+
 
         public function clear() {
             foreach($this->models as $model) {

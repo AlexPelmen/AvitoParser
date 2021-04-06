@@ -2,18 +2,6 @@
     {
         "city": "moskva",
         "category": null,
-        "query": "Гитара"
-    },
-
-    {
-        "city": "moskva",
-        "category": null,
         "query": "dji mini 2"
-    },
-
-    {
-        "city": "moskva",
-        "category": null,
-        "query": "бас"
-    }    
+    }  
 ]
