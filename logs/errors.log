@@ -1,207 +1,7 @@
 
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1956120917' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2082072990' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2094657572' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2109096559' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2009324664' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2105390654' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2052224574' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1958734209' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1911346951' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1569973132' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2075342940' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1869402818' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1830887131' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2109751270' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2105184782' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2091452474' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2097226658' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1928195326' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2098106073' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[06.04.2021 03:08:12]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1336587597' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
-Stack trace:
-#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
-#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
-#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
-#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
-#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
-#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
-#7 {main}
-[07.04.2021 12:00:28]429 Too many requests. 0 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=9` resulted in a `429 Too Many Requests` response:
+[07.04.2021 01:21:13]429 Too many requests. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=1` resulted in a `429 Too Many Requests` response:
 <!DOCTYPE html> <html> <head>
-    <script nonce="pKaT8UfTOfdx0uY0xhBFTA==">
+    <script nonce="jJ+bb1Ik3TTodHbL0WMKgw==">
  window.dataLayer = [{"userAuth":0,"pageType (truncated...)
  in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
 Stack trace:
@@ -215,11 +15,363 @@ Stack trace:
 #7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
 #8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
 #9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
-#10 /var/www/html/avipars/AviRequest.php(98): GuzzleHttp\Client->request()
-#11 /var/www/html/avipars/AviRequest.php(144): AviRequest->getHtml()
-#12 /var/www/html/avipars/AviRequest.php(178): AviRequest->get()
-#13 /var/www/html/avipars/AviRequest.php(187): AviRequest->getNextPage()
-#14 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
-#15 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:23:55]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=1` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="vmnPsb8kMfA4xuTcUkj22w==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:28:23]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=1` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="PUGTS8CQRuSKE6sbhSFJKQ==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:28:56]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=1` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="gJXYaasUcnbXdHeHI6o9dA==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:28:56]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:87
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(139): AviHtmlParser->parseJSONWithMeta()
+#1 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#2 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#3 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#4 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#5 {main}
+[07.04.2021 01:29:07]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=2` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="P3R8suQi338IpAlZsAFBxQ==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(126): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(160): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(169): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
 #16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
 #17 {main}
+[07.04.2021 01:29:44]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=1` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="rvk3n7dxBRrU2GBlXyTs8Q==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:29:44]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:87
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(139): AviHtmlParser->parseJSONWithMeta()
+#1 /var/www/html/avipars/AviRequest.php(166): AviRequest->getWithMeta()
+#2 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#3 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#4 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#5 {main}
+[07.04.2021 01:29:55]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/122131212312?q=dji%20mini%202&p=2` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="JuHpKHaDetq+n1JU+Eg0Vw==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(126): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(160): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(169): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[07.04.2021 01:29:55]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:59
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(127): AviHtmlParser->parseJSON()
+#1 /var/www/html/avipars/AviRequest.php(160): AviRequest->get()
+#2 /var/www/html/avipars/AviRequest.php(169): AviRequest->getNextPage()
+#3 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#4 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#5 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#6 {main}
+[07.04.2021 01:48:19]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/12312?q=dji%20mini%202&p=1` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="Mvrow9GQygt6qUkgonoeag==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(135): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(163): AviRequest->getWithMeta()
+#13 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#14 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#15 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#16 {main}
+[07.04.2021 01:48:19]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:89
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(136): AviHtmlParser->parseJSONWithMeta()
+#1 /var/www/html/avipars/AviRequest.php(163): AviRequest->getWithMeta()
+#2 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#3 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#4 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#5 {main}
+[07.04.2021 01:48:30]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/12312?q=dji%20mini%202&p=2` resulted in a `404 Not Found` response:
+<!DOCTYPE html>
+           
+<html> <head> <script nonce="3a3LCYIEugnZyLlH3v2U1Q==">
+ try {
+ window.firstHiddenTime = doc (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(78): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(123): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(157): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(166): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[07.04.2021 01:48:30]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:59
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(124): AviHtmlParser->parseJSON()
+#1 /var/www/html/avipars/AviRequest.php(157): AviRequest->get()
+#2 /var/www/html/avipars/AviRequest.php(166): AviRequest->getNextPage()
+#3 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#4 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#5 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#6 {main}
+[07.04.2021 02:37:34]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/?q=dji%20mini%202&p=4` resulted in a `404 Not Found` response:
+
+<!DOCTYPE html>
+   
+<html> <head> <script nonce="VD2nuD0rgLWujcgnfRzUsQ==">
+ try {
+ window.firstHiddenTime = document.v (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(89): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(136): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(170): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(179): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[07.04.2021 02:37:34]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:59
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(137): AviHtmlParser->parseJSON()
+#1 /var/www/html/avipars/AviRequest.php(170): AviRequest->get()
+#2 /var/www/html/avipars/AviRequest.php(179): AviRequest->getNextPage()
+#3 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#4 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#5 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#6 {main}
+[07.04.2021 02:42:25]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/?q=dji%20mini%202&p=4` resulted in a `404 Not Found` response:
+
+<!DOCTYPE html>
+   
+<html> <head> <script nonce="Jxl6omTCBhlUTwDfXtj7Yw==">
+ try {
+ window.firstHiddenTime = document.v (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(91): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(172): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(181): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[07.04.2021 02:42:25]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:59
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(139): AviHtmlParser->parseJSON()
+#1 /var/www/html/avipars/AviRequest.php(172): AviRequest->get()
+#2 /var/www/html/avipars/AviRequest.php(181): AviRequest->getNextPage()
+#3 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#4 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#5 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#6 {main}
+[07.04.2021 02:45:53]404 Not found. 2 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/sport_i_otdyh/?q=dji%20mini%202&p=4` resulted in a `404 Not Found` response:
+
+<!DOCTYPE html>
+   
+<html> <head> <script nonce="VNbL+tle4ZcJm84qpPKBFQ==">
+ try {
+ window.firstHiddenTime = document.v (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(91): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(138): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(172): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(181): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}
+[07.04.2021 02:45:53]Can't parse empty requestException: No HTML recieved by parser in /var/www/html/avipars/AviHtmlParser.php:59
+Stack trace:
+#0 /var/www/html/avipars/AviRequest.php(139): AviHtmlParser->parseJSON()
+#1 /var/www/html/avipars/AviRequest.php(172): AviRequest->get()
+#2 /var/www/html/avipars/AviRequest.php(181): AviRequest->getNextPage()
+#3 /var/www/html/avipars/ScanningProcessor.php(72): AviRequest->getAllPagesData()
+#4 /var/www/html/avipars/ScanningProcessor.php(54): ScanningProcessor->executeRequests()
+#5 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#6 {main}

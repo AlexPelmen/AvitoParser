@@ -55,9 +55,15 @@
          * 
          */
         public function parseJSON($html, $collection, $locationId) {
-
-            $this->dom->loadStr($html); 
-            $data = $this->getInitialJson();
+            try{
+                if(!$html) throw new Exception("No HTML recieved by parser");
+                $this->dom->loadStr($html); 
+                $data = $this->getInitialJson();
+            }
+            catch(Exception $e) {
+                $this->logger->error("Can't parse empty request", $e);
+                return 0;
+            }
             
             $items = $data->catalog->items;
             $count = $this->itemsToModels($items, $collection);
@@ -77,8 +83,17 @@
 
 
         public function parseJSONWithMeta($html, $collection) {
-            $this->dom->loadStr($html); 
-            $data = $this->getInitialJson();
+            try{
+                if(!$html) throw new Exception("No HTML recieved by parser");
+                $this->dom->loadStr($html); 
+                $data = $this->getInitialJson();
+            }
+            catch(Exception $e) {
+                $this->logger->error("Can't parse empty request", $e);
+                return [
+                    "recieved" => 0,
+                ];
+            }
 
             try{   
                 $items = $data->catalog->items;

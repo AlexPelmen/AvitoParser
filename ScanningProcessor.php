@@ -33,6 +33,12 @@
         public function __construct() {
             $this->logger = new Logger();
             $this->database = new DataBaseAPI($this->logger);
+
+            //todo: remove
+            $this->database->db->query("DELETE FROM `ads_data`");
+            $this->logger->log("DROP DATABASE");
+
+
             $this->requests = [];
             $this->parser = new AviHtmlParser($this->logger);
         }
