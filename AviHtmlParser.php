@@ -54,14 +54,25 @@
          * Новый метод парсинга инфы из верстки
          * 
          */
-        public function parseJSON($html, $collection) {
+        public function parseJSON($html, $collection, $locationId) {
 
             $this->dom->loadStr($html); 
             $data = $this->getInitialJson();
-            dump($data);
+            
             $items = $data->catalog->items;
+            $count = $this->itemsToModels($items, $collection);
 
-            return $this->itemsToModels($items, $collection);
+            // костыль для баги в авито
+            $extraItems = $data->catalog->extraBlockItems;
+            if(count($extraItems)) {
+                $this->logger->log("Extra items scanning", null);
+                $itemsByOurLocation = $this->filterExtraItemsByLocation($extraItems, $locationId);
+                if(count($itemsByOurLocation)) {
+                    $count += $this->itemsToModels($itemsByOurLocation, $collection);
+                }
+            }           
+
+            return $count;
         }
 
 
@@ -69,7 +80,6 @@
             $this->dom->loadStr($html); 
             $data = $this->getInitialJson();
 
-            dump($data);
             try{   
                 $items = $data->catalog->items;
                 $count = $this->itemsToModels($items, $collection);
@@ -77,7 +87,8 @@
                 $itemsOnPage = $data->itemsOnPage;
                 @$isAuthenticated = $data->isAuthenticated;
                 @$userId = $data->user->id;
-                $searchHash = $data->searchHash;
+                $searchHash = $data->searchHash;              
+                $locationId = $data->searchCore->locationId;
 
                 return [
                     "recieved" => $count,
@@ -86,6 +97,7 @@
                     "isAuthenticated" => $isAuthenticated,
                     "userId" => $userId,
                     "searchHash" => $searchHash,
+                    "locationId" => $locationId,
                 ];
             }
             catch(Exception $e) {
@@ -116,6 +128,7 @@
                         }
                         break;
                     case "vip":     // Проплаченные объявления, но все же релевантные
+                        break;
                         $count += $this->itemsToModels($item->items, $collection);
                         break;
                 }
@@ -175,6 +188,18 @@
                 $this->logger->error("Ошибка при создании модели id: ".$obj->id, $e);
                 return null;
             }
+        }
+
+        /**
+         * Фильтруем объявления из других городов, чтобы выбрать оттуда объявления по определенной location
+         */
+        public function filterExtraItemsByLocation($items, $locationId) {
+            $out = [];
+            foreach($items as $item) {
+                if($item->location->id == $locationId)
+                    $out []= $item;
+            }
+            return $out;
         }
 
 

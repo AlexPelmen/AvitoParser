@@ -1,1 +1,225 @@
 
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1956120917' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2082072990' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2094657572' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2109096559' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2009324664' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:02]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2105390654' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2052224574' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1958734209' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1911346951' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1569973132' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2075342940' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1869402818' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1830887131' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2109751270' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2105184782' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2091452474' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2097226658' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1928195326' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:05]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '2098106073' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[06.04.2021 03:08:12]Ошибка при записи в базу данных. Запрос insertException: Duplicate entry '1336587597' for key 'ads_data.PRIMARY' in /var/www/html/avipars/DataBaseAPI.php:66
+Stack trace:
+#0 /var/www/html/avipars/DataBaseAPI.php(81): DataBaseAPI->insert()
+#1 /var/www/html/avipars/AviRequest.php(110): DataBaseAPI->insertCollection()
+#2 /var/www/html/avipars/AviRequest.php(142): AviRequest->get()
+#3 /var/www/html/avipars/AviRequest.php(151): AviRequest->getNextPage()
+#4 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#5 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#6 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#7 {main}
+[07.04.2021 12:00:28]429 Too many requests. 0 tries were unsuccessedGuzzleHttp\Exception\ClientException: Client error: `GET https://avito.ru/moskva/?q=dji%20mini%202&p=9` resulted in a `429 Too Many Requests` response:
+<!DOCTYPE html> <html> <head>
+    <script nonce="pKaT8UfTOfdx0uY0xhBFTA==">
+ window.dataLayer = [{"userAuth":0,"pageType (truncated...)
+ in /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create()
+#1 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}()
+#2 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler()
+#3 /var/www/html/avipars/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run()
+#5 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /var/www/html/avipars/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /var/www/html/avipars/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /var/www/html/avipars/AviRequest.php(98): GuzzleHttp\Client->request()
+#11 /var/www/html/avipars/AviRequest.php(144): AviRequest->getHtml()
+#12 /var/www/html/avipars/AviRequest.php(178): AviRequest->get()
+#13 /var/www/html/avipars/AviRequest.php(187): AviRequest->getNextPage()
+#14 /var/www/html/avipars/ScanningProcessor.php(66): AviRequest->getAllPagesData()
+#15 /var/www/html/avipars/ScanningProcessor.php(48): ScanningProcessor->executeRequests()
+#16 /var/www/html/avipars/scan.php(8): ScanningProcessor->scan()
+#17 {main}

@@ -16,13 +16,16 @@
             $city,
             $query,
             $category,
-            $page;
+            $page,
+            $locationId,
+            $cookie;
         
             
         // Инициализация переменных            
         public function __construct ($attributes, $parser, $database, $logger) {
             $this->client = new GuzzleHttp\Client([
                 'base_uri' => BASE_URI,
+                'cookies' => true,
                 'headers' => [
                     'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
                     "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
@@ -35,7 +38,6 @@
                     "sec-fetch-site" => "none",
                     "sec-fetch-user" => "?1",
                     "upgrade-insecure-requests" => "1",
-                    "cookie" => "buyer_selected_search_radius4=0_general; _gcl_au=1.1.1668156129.1615822052; _ym_uid=16158220521004781058; _ym_d=1615822052; __gads=ID=01f5523b08315103:T=1615822051:S=ALNI_MagRU369w3sh2Mb_uGfRh4oHFg6HQ; _ga=GA1.2.1333292215.1615822058; isCriteoSetNew=true; abp=1; SEARCH_HISTORY_IDS=%2C4; no-ssr=1; showedStoryIds=61-58-50-49-48-47-42-32; lastViewingTime=1617616866946; st=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoidko0TkJ5SlU2TElJTGRDY3VNTkdBYnlzVGk3VTVKRW8wVkZQNXBSVll0ZVlpM0lxVUJ1Q2JQVUtjS0FnSGJvRTFRWnM3RkhzanorS2ZMTDBLQ2ZZalBhT25wajE3WXJRMVhCcW5VS0szSUtQZ3FTckpYVUZyUE82Sm5QWnZ0dWN2TEVjTkRaKytjRUJ5bzVJQWtzSDE2aDcvWTkxb1BrQ1JNQ2lLQTE2WHpnVnZpOFVZMkFBN0ZiY1FRT29QZXRGQml5M3NldEp5Q3pRdC8vTitMakFGa2hXZ3M1N3RCa1VsaTN5cEJ5ZHJaL1NoRzZjM2xjTzZJV2NpbHl0azhlR1RIaHYyaHc1RzhTYkQrVjlvUEtnMWlJa3Z1SU1Ic01pRGN6MExRZnZaRjQ9IiwiaWF0IjoxNjE3MzUzNzM3LCJleHAiOjE2MTc5NTg1Mzd9.0_Du9QJbuZk75viSvfzrJUUyYTtF_bHdgBPh2xWk--E; _ym_isad=1; _gid=GA1.2.1493515688.1617616879; f=5.f0b321658fd92b2f4b5abdd419952845a68643d4d8df96e9a68643d4d8df96e9a68643d4d8df96e9a68643d4d8df96e94f9572e6986d0c624f9572e6986d0c624f9572e6986d0c62ba029cd346349f36c1e8912fd5a48d02c1e8912fd5a48d0246b8ae4e81acb9fa143114829cf33ca746b8ae4e81acb9fa46b8ae4e81acb9fae992ad2cc54b8aa8ec20f9213b3a1b87615ab5228c34303140e3fb81381f359178ba5f931b08c66a59b49948619279110df103df0c26013a03c77801b122405c2da10fb74cac1eab2da10fb74cac1eabdc5322845a0cba1af722fe85c94f7d0c2da10fb74cac1eab2da10fb74cac1eab2da10fb74cac1eab2da10fb74cac1eab3c02ea8f64acc0bddc5b253bbc650d280c79affd4e5f1d11162fe9fd7c8e976748b2546f6f7b341b260d6a00b989230b5e61d702b2ac73f7b51842b10d61b1cebd68692f50edb27438adc93de73b65ba497eea5644b1bc05fed88e598638463b0df103df0c26013a0df103df0c26013aafbc9dcfc006bed997d74c27146670dff54d525b263ec2763de19da9ed218fe23de19da9ed218fe2dc4f5790d1ff098f147332f8181712da121fd81ea2a6eb1d; ft=\"mvMZ0MXZs2HXMBJacIo+hzglqBbH+vvUIey6aY9fuVcz1xIN3T1FgNk16EfMrngMNXgUQdrLdoKRbmBFs0iccPzY0ueij2zE1pFhdC+ZK61hBkkI1Oh5NWn+IP4PlfWXm4RJMZJfv7X8Iy0MnYGaqucNGH2Zi4YSei0zOxkNd8tz826s4JjLh823BfPXKZoX\"; buyer_popup_location=637640",
                 ]
             ]);
 
@@ -43,7 +45,30 @@
             $this->database = $database;
             $this->logger = $logger;   
             $this->collection = new AviAdsCollection();         
-
+            $this->cookie = [
+                "buyer_selected_search_radius4" => "0_general",
+                "_ym_uid" => "1615372210232452432",
+                "_ym_d" => "1615372210",
+                "_gcl_au" => "1.1.996315498.1615372211",
+                "_ga" => "GA1.2.1222664713.1615372211",
+                "__gads" => "ID=d883552673cffb34:T=1615372210:S=ALNI_MaQg1kN8YDwQ9l0nCCY81XKWdJkGQ",
+                "isCriteoSetNew" => "true",
+                "__utmz" => "99926606.1616406670.1.1.utmcsr=business.avito.ru|utmccn=(referral)|utmcmd=referral|utmcct=/",
+                "showedStoryIds" => "61-58-50-49-48-47-42-32",
+                "lastViewingTime" => "1617282044745",
+                "_gid" => "GA1.2.376445482.1617616911",
+                "_ym_isad" => "1",
+                "abp" => "1",
+                "no-ssr" => "1",
+                "__utmc" => "99926606",
+                "f" => "5.0c4f4b6d233fb90636b4dd61b04726f147e1eada7172e06c47e1eada7172e06c47e1eada7172e06c47e1eada7172e06cb59320d6eb6303c1b59320d6eb6303c1b59320d6eb6303c147e1eada7172e06c8a38e2c5b3e08b898a38e2c5b3e08b890df103df0c26013a0df103df0c26013a2ebf3cb6fd35a0ac0df103df0c26013a8b1472fe2f9ba6b984dcacfe8ebe897bfa4d7ea84258c63d59c9621b2c0fa58f915ac1de0d034112ad09145d3e31a56946b8ae4e81acb9fae2415097439d4047fb0fb526bb39450a46b8ae4e81acb9fa34d62295fceb188dd99271d186dc1cd03de19da9ed218fe2d50b96489ab264edd50b96489ab264edd50b96489ab264ed46b8ae4e81acb9fa51b1fde863bf5c12f8ee35c29834d631c9ba923b7b327da78fe44b90230da2aceb6fa41872a5ca4e2985db2d99140e2d0ee226f11256b780315536c94b3e90e338f0f5e6e0d2832e960a06c8b1b2133da291fc3f0bfffdd50df103df0c26013a0df103df0c26013aafbc9dcfc006bed997d74c27146670dfa01eb4b4be78b42b3de19da9ed218fe23de19da9ed218fe2dc4f5790d1ff098f2fd5948f5c676efa78a492ecab7d2b7f",
+                "ft" => "\"Qoj0zJbLmNr9odmM2pSV8pdqHcGr+geLGE9qZeFhJWHwZC4diBzUJuW6vloPr6fIC+vMUspTA7ImaaK9+EW+dAx76/o+Vi+Srv/Q+vPl+5ispU+lYKTwIEDhKrp6Fr85MJmJLkHyWEUg830qezlJ9rgdONbFjIHB8MN7HDAWAZ07MM/T34yI5eLrFb4j2jSl\"",
+                "SEARCH_HISTORY_IDS" => "%2C4",
+                "_ym_visorc" => "b",
+                "__utma" => "99926606.1222664713.1615372211.1617707412.1617709534.10",
+                "__utmb" => "99926606.25.9.1617712901289"
+            ];
+            
             if(!isset($attributes->query))
                 throw "Empty query supplied to the request processor";
             
@@ -71,7 +96,19 @@
 
                     $res= $this->client->request('GET', "/$city/$category", [
                         'query' => "q=$query&p=$page",
-                    ]);         
+                    ]);   
+
+                    dump($res->getHeaders()["set-cookie"]);
+
+                    foreach($res->getHeaders()["set-cookie"] as $cookie) {
+                        $parts = explode('=', $cookie);
+                        $key = $parts[0];
+                        $parts = explode(';', $parts[1]);
+                        $value = $parts[0];
+                        $this->cookie[$key] = $value;
+                    }
+
+                    dump($this->cookie);
 
                     $htmlStream = $res->getBody();          //читаем поток, чтобы вернуть HTML
                     return $htmlStream->read($htmlStream->getSize());
@@ -105,7 +142,7 @@
          */
         public function get() {
             $html = $this->getHtml();
-            $count = $this->parser->parseJSON($html, $this->collection);  // Тут заполняется коллекция    
+            $count = $this->parser->parseJSON($html, $this->collection, $this->locationId);  // Тут заполняется коллекция    
             $this->database->insertCollection($this->collection);
             $this->collection->clear();
 
@@ -146,6 +183,7 @@
             $this->page = 1;
             $data = $this->getWithMeta();
             $count = $data['recieved'];
+            $this->locationId = $data['locationId'];
             while($newCount = $this->getNextPage()) {
                 $count += $newCount;
                 sleep(BASE_SLEEP_TIME);

@@ -37,7 +37,7 @@
         public function insert($model) {
             try{
                 $attributes = $model->attributes;
-                $res = $this->db->query("INSERT INTO ads_data(
+                $query = "INSERT INTO ads_data(
                     id, 
                     title,
                     link,
@@ -52,17 +52,28 @@
                     $attributes->id, 
                     '$attributes->title',
                     '$attributes->link',
-                    $attributes->price,
+                    ".($attributes->price ?? "NULL").",
                     $attributes->timestamp,
                     '$attributes->location',
                     $attributes->locationId,
                     '$attributes->geo',
                     '".json_encode($attributes->images)."',
                     ".($attributes->dislike ? "TRUE" : "FALSE")."
-                );");
+                );";
+
+                $res = $this->db->query($query);
+                if(!$res) {
+                    throw new Exception(mysqli_error($this->db));
+                }
             }
             catch(Exception $e) {
-                $this->logger->error("Ошибка при записи в базу данных. Запрос insert", $e);
+                $sqlerr = $e->getMessage();
+                if(strpos($sqlerr, "Duplicate entry") !== false) {
+                    $this->logger->log($sqlerr);
+                }
+                else {
+                    $this->logger->error("Ошибка при записи в базу данных. Запрос insert", $e);
+                }
             }
         }
 
