@@ -6,6 +6,7 @@
 
     require_once __DIR__ . "/vendor/autoload.php";
     require_once __DIR__ . "/constants.php";
+    require_once __DIR__ . "/MinkBrowser.php";
 
     class AviRequest {
         public
@@ -19,8 +20,9 @@
             $page,
             $locationId,
             $cookies,
-            $stateCookie,
-            $lastViewingTime;
+            $fCookie,
+            $lastViewingTime,
+            $mink;
         
             
         // Инициализация переменных            
@@ -29,7 +31,6 @@
             $this->logger = $logger; 
 
             $this->cookies = \GuzzleHttp\Cookie\CookieJar::fromArray(DEFAULT_COOKIES, 'avito.ru');
-            $this->refreshState();
 
             $this->client = new GuzzleHttp\Client([
                 'base_uri' => BASE_URI,
@@ -50,9 +51,9 @@
             ]);
 
             $this->parser = $parser;
-            $this->database = $database;
-              
-            $this->collection = new AviAdsCollection();         
+            $this->database = $database;              
+            $this->collection = new AviAdsCollection();    
+            $this->mink = new MinkBrowser($this->logger);     
                     
             if(!isset($attributes->query))
                 throw "Empty query supplied to the request processor";
@@ -83,7 +84,7 @@
                     $res= $this->client->request('GET', "/$city/$category/", [
                         'query' => "q=$query&p=$page",
                         'cookies' => $this->cookies,
-                    ]);  
+                    ]);                      
                     
                     $this->updateLastViewingTime();
 
@@ -95,7 +96,8 @@
                         case 429: 
                             $responses429++;
                             $this->logger->log("429 Too many requests. $responses429-th try ", null);  
-                            $this->refreshState();
+
+                            return $this->getHtmlRefreshCookies();
 
                             if($responses429 <= BASE_MAX_NUM_429) {                    
                                 sleep(BASE_SLEEP_TIME_429);
@@ -105,8 +107,7 @@
                         case 404:
                             $responses404++;
                             $this->logger->log("404 Not found. $responses404-th try ", null);
-                            $this->refreshState();  
-    
+                        
                             if($responses404 <= BASE_MAX_NUM_404) {                    
                                 sleep(BASE_SLEEP_TIME_404);
                             }
@@ -185,12 +186,22 @@
         /**
          * Обновить cookie state для того, чтобы скинуть 429 ошибку 
          */
-        public function refreshState() {
-            $value = "state=".uniqid("state_").';';            
-            $this->stateCookie = GuzzleHttp\Cookie\SetCookie::fromString($value);
-            $this->logger->log("Refreshing cookie state: $value", null);
-            $this->stateCookie->setDomain("avito.ru");           
-            $this->cookies->setCookie($this->stateCookie);
+        public function getHtmlRefreshCookies() {
+            $res = $this->mink->getMetaData();
+            $data = $res["data"]; $cookies = $res["cookies"];           
+            $cookieJar = \GuzzleHttp\Cookie\CookieJar::fromArray(
+                explode(';', $cookies)
+            );
+            $f = $cookieJar->getCookieByName('f');
+            $ft = $cookieJar->getCookieByName('ft');
+
+            $this->cookies->setCookie($f);
+            $this->cookies->setCookie($ft);
+
+            unset($cookieJar);
+
+            $this->logger->log("Refreshing cookies", null);                
+            return "<div class = 'js-initial'>".$data."</div>";      
         }
 
 

@@ -2,21 +2,28 @@
 
     require __DIR__ . "/vendor/autoload.php";
 
-    $city = "moskva";
-    $query = "гитара";
-    $category = "muzykalnye_instrumenty";
-    $page = 2;
+    use Behat\Mink\Mink;
+    use Behat\Mink\Session;
+    use DMore\ChromeDriver\ChromeDriver;
 
-    $client = new GuzzleHttp\Client([
-        'base_uri' => 'https://avito.ru'
-    ]);
+    echo "Come on, bitches!!!\n";
 
-    $response = $client->request('GET', "/$city/$category", [
-        'query' => "q=$query&p=$page"
-    ]); 
+    $mink = new Mink(array(
+        'browser' => new Session(new ChromeDriver('http://localhost:9222', null, 'http://www.google.com'))
+    ));
 
+    // set the default session name
+    $mink->setDefaultSessionName('browser');
+
+    $session = $mink->getSession();
+    $session->visit('https://www.avito.ru/moskva/audio_i_video?p=1&q=go+pro+hero+9');
     
+    //echo $session->getCookie('f');
 
-    dump($response); 
+    //echo $session->executeScript('document.cookie');
+    sleep(5);
+    echo $session->evaluateScript(
+        "return document.cookie;"
+    );
 
-
+    echo "That's all, pals)))\n";

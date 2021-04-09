@@ -64,7 +64,28 @@
                 $this->logger->error("Can't parse empty request", $e);
                 return 0;
             }
-            
+            return $this->dataToCollection($data, $collection);            
+        }
+
+
+
+        public function parseJSONWithMeta($html, $collection) {
+            try{
+                if(!$html) throw new Exception("No HTML recieved by parser");
+                $this->dom->loadStr($html); 
+                $data = $this->getInitialJson();
+            }
+            catch(Exception $e) {
+                $this->logger->error("Can't parse empty request", $e);
+                return [
+                    "recieved" => 0,
+                ];
+            }
+            return $this->dataToCollectionWithMeta($data, $collection);
+        }
+
+
+        public function dataToCollection($data, $collection) {
             $items = $data->catalog->items;
             $count = $this->itemsToModels($items, $collection);
 
@@ -82,19 +103,7 @@
         }
 
 
-        public function parseJSONWithMeta($html, $collection) {
-            try{
-                if(!$html) throw new Exception("No HTML recieved by parser");
-                $this->dom->loadStr($html); 
-                $data = $this->getInitialJson();
-            }
-            catch(Exception $e) {
-                $this->logger->error("Can't parse empty request", $e);
-                return [
-                    "recieved" => 0,
-                ];
-            }
-
+        public function dataToCollectionWithMeta($data, $collection) {
             try{   
                 $items = $data->catalog->items;
                 $count = $this->itemsToModels($items, $collection);
@@ -117,6 +126,9 @@
             }
             catch(Exception $e) {
                 $this->log->error("Не удалось получить одно из свойств объявления", $e);
+                return [
+                    "recieved" => 0
+                ];
             }
         }
 

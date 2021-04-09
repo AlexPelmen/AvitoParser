@@ -1,7 +1,9 @@
 {
     "require": {
         "guzzlehttp/guzzle": "^7.2",
-        "paquettg/php-html-parser": "^3.1"
+        "paquettg/php-html-parser": "^3.1",
+        "dmore/chrome-mink-driver": "^2.7",
+        "behat/mink": "^1.8"
     },
     "require-dev": {
         "symfony/var-dumper": "^5.2"
