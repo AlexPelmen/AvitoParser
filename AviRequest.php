@@ -30,24 +30,12 @@
             
             $this->logger = $logger; 
 
-            $this->cookies = \GuzzleHttp\Cookie\CookieJar::fromArray(DEFAULT_COOKIES, 'avito.ru');
+            $this->cookies = \GuzzleHttp\Cookie\CookieJar::fromArray([], 'avito.ru');
 
             $this->client = new GuzzleHttp\Client([
                 'base_uri' => BASE_URI,
                 'cookies' => $this->cookies,
-                'headers' => [
-                    'User-Agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
-                    "accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-                    "accept-language" => "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7",
-                    "cache-control" => "max-age=0",
-                    "sec-ch-ua" => "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"",
-                    "sec-ch-ua-mobile" => "?0",
-                    "sec-fetch-dest" => "document",
-                    "sec-fetch-mode" => "navigate",
-                    "sec-fetch-site" => "none",
-                    "sec-fetch-user" => "?1",
-                    "upgrade-insecure-requests" => "1",
-                ]
+                'headers' => BASE_HEADERS,
             ]);
 
             $this->parser = $parser;
@@ -74,57 +62,64 @@
             $category = $this->category;
             $query = $this->query;
             $page = $this->page;
-            $responses429 = 0;
-            $responses404 = 0;
-            
-            while($responses429 <= BASE_MAX_NUM_429 && $responses404 <= BASE_MAX_NUM_404 ) {
-                try{
-                    $this->logger->log("Request GET /$city/$category?q=$query&p=$page");
 
-                    $res= $this->client->request('GET', "/$city/$category/", [
-                        'query' => "q=$query&p=$page",
-                        'cookies' => $this->cookies,
-                    ]);                      
-                    
-                    $this->updateLastViewingTime();
+            try{
+                $this->logger->log("Request GET /$city/$category?q=$query&p=$page");
 
-                    $htmlStream = $res->getBody();          //читаем поток, чтобы вернуть HTML
-                    return $htmlStream->read($htmlStream->getSize());
-                }
-                catch(Exception $e) {  
-                    switch($e->getResponse()->getStatusCode()) {
-                        case 429: 
-                            $responses429++;
-                            $this->logger->log("429 Too many requests. $responses429-th try ", null);  
+                $res= $this->client->request('GET', "/$city/$category/", [
+                    'query' => "q=$query&p=$page",
+                    'cookies' => $this->cookies,
+                ]);                      
+                
+                $this->updateLastViewingTime();
 
-                            return $this->getHtmlRefreshCookies();
-
-                            if($responses429 <= BASE_MAX_NUM_429) {                    
-                                sleep(BASE_SLEEP_TIME_429);
-                            }
-                            
-                            break;
-                        case 404:
-                            $responses404++;
-                            $this->logger->log("404 Not found. $responses404-th try ", null);
-                        
-                            if($responses404 <= BASE_MAX_NUM_404) {                    
-                                sleep(BASE_SLEEP_TIME_404);
-                            }
-                            break;
-                        default:
-                            $this->logger->error("Ошибка при выполнении запроса", $e);
-                            return null;
-                    }                                           
-                }
+                $htmlStream = $res->getBody();          //читаем поток, чтобы вернуть HTML
+                return [
+                    "status" => 200,
+                    "response" => $htmlStream->read($htmlStream->getSize()),
+                ];
             }
+            catch(Exception $e) {  
+                switch($e->getResponse()->getStatusCode()) {
+                    case 429: 
+                        $this->logger->log("429 Too many requests. $responses429-th try ", null);  
+                        break;
+                    case 404:
+                        $this->logger->log("404 Not found. $responses404-th try ", null);
+                        break;
+                    default:
+                        $this->logger->error("Ошибка при выполнении запроса", $e);
+                        break;
+                };
+                return [
+                    "status" => $e->getResponse()->getStatusCode(),
+                    "response" => "",
+                ];                                          
+            }            
+        }
 
-            // Если попытки закончились
-            if($responses429 > BASE_MAX_NUM_429)
-                $this->logger->error("429 Too many requests. ".BASE_MAX_NUM_429." tries were unsuccessed", $e);
-            if($responses404 > BASE_MAX_NUM_404)
-                $this->logger->error("404 Not found. ".BASE_MAX_NUM_404." tries were unsuccessed", $e);
-            return null;
+
+        /**
+         * Через Mink
+         */
+        public function getDataWithBrowser() {
+            $city = $this->city;
+            $category = $this->category;
+            $query = $this->query;
+            $page = $this->page;
+
+            $request = "https://avito.ru/$city/$category?q=$query&p=$page";
+            $this->logger->log("MINK $request");
+
+            try{
+                $data = $this->mink->getMetaData($request);
+                $this->updateCookies($data['cookies']);
+            }
+            catch(Exception $e) {
+                $this->logger->error("Ошибка при выполнении сессии Mink", $e);
+                return [];
+            }
+            return $data['data'];
         }
 
 
@@ -133,11 +128,24 @@
          * Получаем объявления и парсим их
          */
         public function get() {
-            $html = $this->getHtml();
-            $count = $this->parser->parseJSON($html, $this->collection, $this->locationId);  // Тут заполняется коллекция    
-            $this->database->insertCollection($this->collection);
-            $this->collection->clear();
-
+            $res = $this->getHtml();
+            switch($res["status"]) {
+                case 200: 
+                    $html = $res["response"];
+                    $count = $this->parser->parseJSON($html, $this->collection, $this->locationId);  // Тут заполняется коллекция    
+                    break;
+                case 429: 
+                    $data = $this->getDataWithBrowser();
+                    $count = $this->parser->dataToCollection($data, $this->collection, $this->locationId); // Тут заполняется коллекция  
+                default:
+                    $count = 0;
+                    break;                    
+            }
+            
+            if($count) {
+                $this->database->insertCollection($this->collection);
+                $this->collection->clear();
+            }
             $this->logger->log("$count ads recieved", null);
 
             return $count;
@@ -145,22 +153,31 @@
 
 
         public function getWithMeta() {
-            $html = $this->getHtml();
-            $data = $this->parser->parseJSONWithMeta($html, $this->collection);  // Тут заполняется коллекция    
-            $this->database->insertCollection($this->collection);
-            $this->collection->clear();
+            $data = $this->getDataWithBrowser();
+            $meta = $this->parser->dataToCollectionWithMeta($data, $this->collection); // Тут заполняется коллекция  
+         
+            if($meta['recieved']) {
+                $this->database->insertCollection($this->collection);
+                $this->collection->clear();
+            }
+
+            $total = $meta['total'] ?? "Error";
+            $itemsOnPage = $meta['itemsOnPage'] ?? "Error";
+            $isAuthenticated = $meta['isAuthenticated'] ? "true" : "false";
+            $userId = $meta['userId'] ?? "none";
+            $searchHash = $meta['searchHash'] ?? "Error";
+            $recieved = $meta['recieved'] ?? "None";
 
             $this->logger->logMessage("\n<request meta>");
-            $this->logger->log("There are ".$data['total']." ads for this request", null);
-            $this->logger->log("Items on the page: ".$data['itemsOnPage'], null);
-            $this->logger->log("Is authenticated: ".($data['isAuthenticated'] ? "true" : "false"), null);
-            $this->logger->log("Avito user id: ".($data['userId'] ?? "none"), null);
-            $this->logger->log("Avito search hash: ".$data['searchHash'], null);
-            $this->logger->log($data['recieved']." ads recieved", null);
-            $this->logger->logMessage("</request meta>\n\n");
+            $this->logger->log("There are $total ads for this request", null);
+            $this->logger->log("Items on the page: $itemsOnPage", null);
+            $this->logger->log("Is authenticated: $isAuthenticated", null);
+            $this->logger->log("Avito user id: $userId", null);
+            $this->logger->log("Avito search hash: $searchHash", null);
+            $this->logger->log("$recieved ads recieved", null);
+            $this->logger->logMessage("</request meta>\n");
 
-
-            return $data;
+            return $meta;
         }
 
         
@@ -175,7 +192,10 @@
             $this->page = 1;
             $data = $this->getWithMeta();
             $count = $data['recieved'];
+            if(!$count) return 0;            
+
             $this->locationId = $data['locationId'];
+
             while($newCount = $this->getNextPage()) {
                 $count += $newCount;
                 sleep(BASE_SLEEP_TIME);
@@ -183,25 +203,33 @@
             return $count;           
         }
 
+
         /**
          * Обновить cookie state для того, чтобы скинуть 429 ошибку 
          */
-        public function getHtmlRefreshCookies() {
-            $res = $this->mink->getMetaData();
-            $data = $res["data"]; $cookies = $res["cookies"];           
-            $cookieJar = \GuzzleHttp\Cookie\CookieJar::fromArray(
-                explode(';', $cookies)
-            );
-            $f = $cookieJar->getCookieByName('f');
-            $ft = $cookieJar->getCookieByName('ft');
+        public function updateCookies($cookies) {  
 
-            $this->cookies->setCookie($f);
-            $this->cookies->setCookie($ft);
-
-            unset($cookieJar);
-
-            $this->logger->log("Refreshing cookies", null);                
-            return "<div class = 'js-initial'>".$data."</div>";      
+            if(!$this->cookies->count()) { //установка нового набор кук
+                foreach(explode(';', $cookies) as $cookieString) {
+                    $cookie = GuzzleHttp\Cookie\SetCookie::fromString($cookieString);
+                    $cookie->setDomain("avito.ru");
+                    $this->cookies->setCookie($cookie);
+                }
+                $this->logger->log("Новые куки установлены из сессии mink", null);
+            }
+            else{   // обновление кук f и ft
+                $this->logger->log("Refreshing cookies", null);  
+                $cookieJar = \GuzzleHttp\Cookie\CookieJar::fromArray(
+                    explode(';', $cookies)
+                );
+                $f = $cookieJar->getCookieByName('f');
+                $ft = $cookieJar->getCookieByName('ft');
+    
+                $this->cookies->setCookie($f);
+                $this->cookies->setCookie($ft);
+    
+                unset($cookieJar);
+            }
         }
 
 
@@ -211,7 +239,9 @@
         public function updateLastViewingTime() {
             $this->lastViewingTime = time()*1000;
             $cookie = $this->cookies->getCookieByName("lastViewingTime");
-            $cookie->setValue($this->lastViewingTime);
-            $this->cookies->setCookie($cookie);
+            if($cookie) {
+                $cookie->setValue($this->lastViewingTime);
+                $this->cookies->setCookie($cookie);
+            }
         }
     }

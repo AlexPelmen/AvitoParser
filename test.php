@@ -16,7 +16,7 @@
     $mink->setDefaultSessionName('browser');
 
     $session = $mink->getSession();
-    $session->visit('https://www.avito.ru/moskva/audio_i_video?p=1&q=go+pro+hero+9');
+    $session->visit('https://avito.ru/moskva/sport_i_otdyh?q=dji mini 2&p=1');
     
     //echo $session->getCookie('f');
 

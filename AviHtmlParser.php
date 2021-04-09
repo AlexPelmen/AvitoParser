@@ -64,7 +64,7 @@
                 $this->logger->error("Can't parse empty request", $e);
                 return 0;
             }
-            return $this->dataToCollection($data, $collection);            
+            return $this->dataToCollection($data, $collection, $locationId);            
         }
 
 
@@ -85,7 +85,7 @@
         }
 
 
-        public function dataToCollection($data, $collection) {
+        public function dataToCollection($data, $collection, $locationId) {
             $items = $data->catalog->items;
             $count = $this->itemsToModels($items, $collection);
 
