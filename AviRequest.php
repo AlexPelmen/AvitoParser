@@ -64,6 +64,12 @@
             $page = $this->page;
 
             try{
+            
+                $dispCookie = [];
+                foreach($this->cookies->toArray() as $cookie) {
+                    $dispCookie []= $cookie["Name"]." = ".$cookie["Value"];
+                };
+
                 $this->logger->log("Request GET /$city/$category?q=$query&p=$page");
 
                 $res= $this->client->request('GET', "/$city/$category/", [
@@ -82,10 +88,10 @@
             catch(Exception $e) {  
                 switch($e->getResponse()->getStatusCode()) {
                     case 429: 
-                        $this->logger->log("429 Too many requests. $responses429-th try ", null);  
+                        $this->logger->log("429 Too many requests", null);  
                         break;
                     case 404:
-                        $this->logger->log("404 Not found. $responses404-th try ", null);
+                        $this->logger->log("404 Not found", null);
                         break;
                     default:
                         $this->logger->error("Ошибка при выполнении запроса", $e);
@@ -196,7 +202,7 @@
 
             $this->locationId = $data['locationId'];
 
-            while($newCount = $this->getNextPage()) {
+            while($this->page <= MAX_PAGES_NUM && $newCount = $this->getNextPage()) {
                 $count += $newCount;
                 sleep(BASE_SLEEP_TIME);
             };
@@ -237,11 +243,23 @@
          * Обновить в куки время последнего запроса
          */
         public function updateLastViewingTime() {
-            $this->lastViewingTime = time()*1000;
-            $cookie = $this->cookies->getCookieByName("lastViewingTime");
-            if($cookie) {
-                $cookie->setValue($this->lastViewingTime);
-                $this->cookies->setCookie($cookie);
+            $this->lastViewingTime = time();
+            $lastViewingTime = $this->cookies->getCookieByName("lastViewingTime");
+            if($lastViewingTime) {
+                $lastViewingTime->setValue($this->lastViewingTime*1000);
+                $this->cookies->setCookie($lastViewingTime);
+            }
+            
+            $v = $this->cookies->getCookieByName("v");
+            if($v){
+                $v->setValue($this->lastViewingTime);
+                $this->cookies->setCookie($v);
+            }
+
+            $so = $this->cookies->getCookieByName("so");
+            if($so) {
+                $so->setValue($this->lastViewingTime);
+                $this->cookies->setCookie($so);
             }
         }
     }

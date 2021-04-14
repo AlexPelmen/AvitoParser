@@ -25,6 +25,8 @@
     const BASE_SLEEP_TIME_404 = 5;
     const BASE_MAX_NUM_404 = 2;
 
+    const MAX_PAGES_NUM = 100;
+
     // Логирование
     const BASE_LOG_ERROR_PATH = __DIR__ . "/logs/errors.log";
     const BASE_LOG_PATH = __DIR__ . "/logs/log.log";

@@ -1,13 +1,7 @@
 [
     {
         "city": "moskva",
-        "category": "sport_i_otdyh",
-        "query": "dji mini 2"
-    },
-
-    {
-        "city": "moskva",
-        "category": "audio_i_video",
-        "query": "go pro hero 9"
-    }  
+        "category": "",
+        "query": "гитара"
+    }
 ]
